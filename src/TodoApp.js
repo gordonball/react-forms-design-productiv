@@ -21,7 +21,9 @@ import INITIAL_TODOS from "./initialTodos";
 function TodoApp({ initialTodos = INITIAL_TODOS }) {
 
   const [todos, setTodos] = useState(initialTodos);
-  console.log("TodoApp!!!!!!!!!", initialTodos, todos)
+
+  // console.log("TodoApp!!!!!!!!!", initialTodos, todos)
+
   /** add a new todo to list */
   function create(newTodo) {
     setTodos(todos => [...todos, { ...newTodo, id: uuid() }]);

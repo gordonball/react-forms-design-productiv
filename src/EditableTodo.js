@@ -16,7 +16,7 @@ function EditableTodo({ todo, update, remove }) {
 
   const [isEditing, setIsEditing] = useState(false);
 
-  console.log("EditableTodo!!!!!!!!!", todo)
+  // console.log("EditableTodo!!!!!!!!!", todo)
 
   /** Toggle if this is being edited */
   function toggleEdit() {
@@ -30,7 +30,7 @@ function EditableTodo({ todo, update, remove }) {
 
   /** Edit form saved; toggle isEditing and update in ancestor. */
   function handleSave(formData) {
-    update({...formData, id: todo.id})
+    update({ ...formData, id: todo.id });
     setIsEditing(false);
   }
 

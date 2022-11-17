@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const defaultFormData = { title: "", description: "", priority: 1 }
+const defaultFormData = { title: "", description: "", priority: 1 };
 
 /** Form for adding.
  *
@@ -12,8 +12,6 @@ const defaultFormData = { title: "", description: "", priority: 1 }
  */
 
 function TodoForm({ initialFormData=defaultFormData, handleSave }) {
-
-
 
   const [formData, setFormData] = useState(initialFormData);
 
