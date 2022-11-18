@@ -7,7 +7,7 @@ exports[`Todo matches snapshot 1`] = `
   >
     <div>
       <b>
-        Test
+        Test Title
       </b>
        
       <small>
@@ -18,7 +18,7 @@ exports[`Todo matches snapshot 1`] = `
     </div>
     <div>
       <small>
-        Test
+        Test Description
       </small>
     </div>
   </div>

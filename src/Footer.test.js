@@ -13,9 +13,9 @@ describe("Footer", function() {
   });
 
   it("renders with correct text", function() {
-    const text = render(<Footer />);
+    const result = render(<Footer />);
 
-    expect(text.queryByText(
+    expect(result.queryByText(
       "Prødutïv is copyright ©2020 by Flüffy Data Enterprises, Inc."
     )).toBeInTheDocument();
   });

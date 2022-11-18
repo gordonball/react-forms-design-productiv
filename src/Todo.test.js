@@ -3,8 +3,8 @@ import Todo from "./Todo.js";
 
 const todo = {
   id: 1,
-  title: "Test",
-  description: "Test",
+  title: "Test Title",
+  description: "Test Description",
   priority: 2
 }
 
