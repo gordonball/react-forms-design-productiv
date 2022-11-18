@@ -18,4 +18,12 @@ describe("Todo", function() {
 
     expect(container).toMatchSnapshot();
   });
+
+  it("renders with correct text", function () {
+    const result = render(<Todo todo={todo} />);
+
+    expect(result.queryByText("Test Title")).toBeInTheDocument();
+    expect(result.queryByText("Test Description")).toBeInTheDocument();
+    expect(result.queryByText("(priority: 2)")).toBeInTheDocument();
+  })
 });

@@ -39,7 +39,7 @@ exports[`TodoApp matches snapshot 1`] = `
               >
                 <div>
                   <b>
-                    Test1
+                    TestTitle1
                   </b>
                    
                   <small>
@@ -50,7 +50,7 @@ exports[`TodoApp matches snapshot 1`] = `
                 </div>
                 <div>
                   <small>
-                    Test2
+                    TestDescription1
                   </small>
                 </div>
               </div>
@@ -81,7 +81,7 @@ exports[`TodoApp matches snapshot 1`] = `
               >
                 <div>
                   <b>
-                    Test2
+                    TestTitle2
                   </b>
                    
                   <small>
@@ -92,7 +92,7 @@ exports[`TodoApp matches snapshot 1`] = `
                 </div>
                 <div>
                   <small>
-                    Test2
+                    TestDescription2
                   </small>
                 </div>
               </div>
@@ -123,7 +123,7 @@ exports[`TodoApp matches snapshot 1`] = `
               >
                 <div>
                   <b>
-                    Test3
+                    TestTitle3
                   </b>
                    
                   <small>
@@ -134,7 +134,7 @@ exports[`TodoApp matches snapshot 1`] = `
                 </div>
                 <div>
                   <small>
-                    Test3
+                    TestDescription3
                   </small>
                 </div>
               </div>
@@ -156,7 +156,7 @@ exports[`TodoApp matches snapshot 1`] = `
           >
             <div>
               <b>
-                Test1
+                TestTitle1
               </b>
                
               <small>
@@ -167,7 +167,7 @@ exports[`TodoApp matches snapshot 1`] = `
             </div>
             <div>
               <small>
-                Test2
+                TestDescription1
               </small>
             </div>
           </div>

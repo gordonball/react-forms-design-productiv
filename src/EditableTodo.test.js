@@ -39,4 +39,31 @@ describe("EditableTodo", function() {
 
     expect(removeMock).toHaveBeenCalledTimes(1);
   });
+
+  it("shows go button when edit button is clicked", function () {
+
+    const result = render(<EditableTodo todo={todo}/>);
+    expect(result.queryByText("Gø!")).not.toBeInTheDocument();
+    expect(result.queryByText("(priority: 2)")).toBeInTheDocument();
+
+    fireEvent.click(result.queryByText("Edit"));
+
+    expect(result.queryByText("Gø!")).toBeInTheDocument();
+    expect(result.queryByText("(priority: 2)")).not.toBeInTheDocument();
+  })
+
+  it("checks if Go button calls update function", function () {
+
+    const updateMock = jest.fn();
+    updateMock.mockClear();
+
+    const result = render(<EditableTodo todo={todo} update={updateMock} />);
+
+    fireEvent.click(result.queryByText("Edit"));
+
+    fireEvent.click(result.queryByText("Gø!"));
+
+    expect(updateMock).toHaveBeenCalledTimes(1);
+
+  })
 });
