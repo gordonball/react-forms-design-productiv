@@ -66,6 +66,7 @@ describe("TodoApp", function() {
     fireEvent.click(result.queryAllByText("Gø!")[0]);
 
     expect(result.queryAllByText("Title 4")[0]).toBeInTheDocument();
+    expect(result.queryAllByText("Title 4").length).toEqual(2);
 
   });
 
@@ -85,7 +86,9 @@ describe("TodoApp", function() {
     fireEvent.click(result.queryByText("Gø!"));
 
     expect(result.queryAllByText("New Todo")[0]).toBeInTheDocument();
+    expect(result.queryAllByText("New Todo").length).toEqual(2);
     expect(result.queryAllByText("New Description")[0]).toBeInTheDocument();
+    expect(result.queryAllByText("New Description").length).toEqual(2);
 
     expect(result.queryByText("You have no todos.")).not.toBeInTheDocument();
 
