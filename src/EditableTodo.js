@@ -19,7 +19,7 @@ function EditableTodo({ todo, update, remove }) {
 
   const [isEditing, setIsEditing] = useState(false);
 
-  console.log("EditableTodo!!!!!!!!!", todo)
+  // console.log("EditableTodo!!!!!!!!!", todo)
 
   /** Toggle if this is being edited */
   function toggleEdit() {
