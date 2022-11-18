@@ -5,9 +5,12 @@ import TodoForm from "./TodoForm";
 /** Show editable todo item.
  *
  * Props
- * - todo
+ * - todo: like { id, title, description, priority }
  * - update(): fn to call to update a todo
  * - remove(): fn to call to remove a todo
+ *
+ * States
+ * - isEditing: boolean
  *
  * EditableTodoList -> EditableTodo -> { Todo, TodoForm }
  */
@@ -31,14 +34,14 @@ function EditableTodo({ todo, update, remove }) {
   /** Edit form saved; toggle isEditing and update in ancestor. */
   function handleSave(formData) {
     update({...formData, id: todo.id})
-    setIsEditing(false);
+    setIsEditing(edit => !edit);
   }
 
   return (
       <div className="EditableTodo">
       {isEditing ?
 
-        (<TodoForm handleSave={handleSave} />)
+        (<TodoForm handleSave={handleSave} initialFormData={todo} />)
 
         :
 

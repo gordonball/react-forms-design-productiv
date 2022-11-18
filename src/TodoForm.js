@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const defaultFormData = { title: "", description: "", priority: 1 }
+const defaultFormData = { title: "", description: "", priority: 1 };
 
 /** Form for adding.
  *
@@ -8,13 +8,13 @@ const defaultFormData = { title: "", description: "", priority: 1 }
  * - initialFormData
  * - handleSave: function to call in parent.
  *
+ * States:
+ * - formData: like {title, description, priority}
+ *
  * { TodoApp, EditableTodo } -> TodoForm
  */
 
 function TodoForm({ initialFormData=defaultFormData, handleSave }) {
-
-
-
   const [formData, setFormData] = useState(initialFormData);
 
   /** Update form input. */
@@ -37,6 +37,7 @@ function TodoForm({ initialFormData=defaultFormData, handleSave }) {
       <form className="NewTodoForm" onSubmit={handleSubmit}>
 
         <div className="mb-3">
+          <label htmlFor="newTodo-title">Title</label>
           <input
               id="newTodo-title"
               name="title"
@@ -49,6 +50,7 @@ function TodoForm({ initialFormData=defaultFormData, handleSave }) {
         </div>
 
         <div className="mb-3">
+          <label htmlFor="newTodo-description">Description</label>
           <textarea
               id="newTodo-description"
               name="description"

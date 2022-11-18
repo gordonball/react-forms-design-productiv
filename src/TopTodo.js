@@ -7,6 +7,8 @@ import Todo from "./Todo";
  * Props:
  * - todos
  *
+ * Stateless
+ *
  * TodoApp -> TopTodo
  */
 

@@ -5,6 +5,8 @@ import React from "react";
  * Props:
  * - todo: like { id, title, description, priority }
  *
+ * Stateless
+ *
  * { EditableTodo, TopTodo } -> Todo
  **/
 

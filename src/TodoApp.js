@@ -11,6 +11,7 @@ import INITIAL_TODOS from "./initialTodos";
  *
  * Props:
  * - initialTodos: possible array of [ todo, ... ]
+ *    -todo: like { id, title, description, priority }
  *
  * State:
  * - todos: array of [ todo, ... ]

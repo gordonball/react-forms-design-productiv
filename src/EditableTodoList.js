@@ -5,8 +5,11 @@ import EditableTodo from "./EditableTodo";
  *
  * Props:
  * - todos: array of [ todo, ... ]
+ *    -todo: like { id, title, description, priority }
  * - update(): fn to call to update a todo
  * - remove(): fn to call to remove a todo
+ *
+ * Stateless
  *
  * TodoApp -> EditableTodoList -> [ EditableTodo, ... ]
  */
@@ -14,7 +17,7 @@ import EditableTodo from "./EditableTodo";
 function EditableTodoList({ todos, update, remove }) {
   console.log("EditableTodoList!!!!!!!!!", todos)
   return (
-    <div>
+    <div className="EditableTodoList">
       {todos.map(todo => (
         <EditableTodo key={todo.id} todo={todo} update={update} remove={remove} />
       ))}

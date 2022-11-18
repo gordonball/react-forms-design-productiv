@@ -6,6 +6,8 @@ import "./App.css";
 
 /** Site application.
  *
+ * Renders header, TodoApp, and Footer
+ *
  * App -> TodoApp
  **/
 
